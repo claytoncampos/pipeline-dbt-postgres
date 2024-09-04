@@ -1,0 +1,13 @@
+
+version: 2
+
+models:
+  - name: location
+    description: "dimensão geográfica"
+    columns:
+      - name: city_id
+        description: "Chave primária da tabela"
+        data_tests:
+          - unique
+          - not_null
+
