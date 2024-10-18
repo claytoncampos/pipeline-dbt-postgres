@@ -7,12 +7,17 @@ source .venv/bin/activate
 pip install psycopg2-binary sqlalchemy pandas
 python3 import tables.py
 
-# dbt (T)
+# dbt
 pip install dbt-postgres
 dbt init <nome projeto>
-atualiza arqivo dbt project.yml
+atualiza arquivo dbt project.yml
 conectar com o banco de dados
   criar arquivo profiles.yml
   testar com dbt debug
+
+# modelagem (T) > postgres
+
+## location
+
 
 
