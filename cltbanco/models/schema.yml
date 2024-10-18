@@ -10,4 +10,17 @@ models:
         data_tests:
           - unique
           - not_null
+  - name: account_customer
+    description: "dimensão conta e usuario"
+    columns:
+      - name: city_id
+        description: "Chave primária da tabela"
+        data_tests:
+          - relationships:
+              to: ref('location')
+              field: city_id
+      - name: account_status 
+        data_tests:
+          - accepted_values:
+              values: ['active', 'inactive']
 
